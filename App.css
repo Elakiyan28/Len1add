@@ -1,0 +1,64 @@
+.app {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background: #2b2e4a;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.navbar .nav-links li {
+  cursor: pointer;
+}
+.navbar .nav-links li.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.devices-section {
+  padding: 2rem;
+}
+.devices-section .tabs {
+  margin: 1rem 0;
+}
+.devices-section .tabs button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.devices-section .tabs button.active {
+  background-color: #1b1918;
+  color: white;
+}
+.devices-section .controls {
+  margin-bottom: 1rem;
+}
+.devices-section .controls input {
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+.devices-section .controls button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+}
+.devices-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.devices-section table th, .devices-section table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+.devices-section table th {
+  background: #f4f4f4;
+}/*# sourceMappingURL=App.css.map */

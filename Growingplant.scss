@@ -1,0 +1,276 @@
+// // $c1: green;
+// // $c2: blue;
+// // $c2: red;
+// // $c3: orange;
+// // $c4: silver;
+.app {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background: #2b2e4a;
+  //margin-top: 5rem;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .logo {
+    margin-top: 1rem;
+  }
+
+  .nav-links {
+    //margin-top: 20px;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-left:70px;
+
+    li {
+      cursor: pointer;
+
+      &.active {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.devices-section {
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+
+  .tabs {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    button {
+      margin-right: 0;
+      border-radius: 24px;
+      padding: 0.75rem 2rem;
+
+      &.active {
+        background-color: #2b2e4a;
+        color: white;
+      }
+    }
+  }
+
+  .controls {
+    margin: 0 0 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+
+    input {
+      padding: 0.5rem;
+      margin-right: 0;
+    }
+
+    .ttt,
+    .fbb {
+      //margin-left: 450px;
+      background-color: white;
+      color: black;
+      border-color: black;
+      border-radius: 24px;
+      padding: 0.75rem 2rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .b1b {
+      //margin-left: 430px;
+      background: rgb(255, 94, 0);
+      background-color: rgb(235, 89, 36);
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      padding: 0.75rem 2rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      text-align: left;
+    }
+
+    th {
+      background: #f4f4f4;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 1200px) {
+  .devices-section .controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-right: 0;
+    }
+  }
+  .devices-section {
+    padding: 1rem;
+    .controls {
+      flex-direction: column;
+      align-items: stretch;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .devices-section {
+    padding: 0.5rem;
+    table th,
+    table td {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  .am {
+    width: 100vw;
+    padding: 1rem;
+  }
+}
+
+// Modal and form styles
+.amb {
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.am {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 420px;
+  max-width: 95vw;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+.amh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.at {
+  margin: 0;
+}
+
+.ast {
+  color: #b41a1a;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ac {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.al {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.ai {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.ar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.atb {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 24px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.atb.active-signage {
+  background: #fff5f0;
+  color: #ff7043;
+}
+
+.atb.active-domain {
+  background: #e3f0fd;
+  color: orangered;
+}
+
+.aa {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.acc {
+  background: #f5f6fa;
+  color: #222;
+  border: none;
+  border-radius: 24px;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.as {
+  background: #e04718;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
